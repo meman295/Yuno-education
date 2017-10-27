@@ -33,6 +33,9 @@ def interests
   render('/pages/interests')
 end
 
+def learn
+  render ('/pages/learn')
+end
 # def redirect
 #    redirect_to(:action => 'index')
 #

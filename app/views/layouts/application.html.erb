@@ -5,10 +5,10 @@
     <%= csrf_meta_tags %>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="app/assets/stylesheets/pages.scss">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body style="padding-top: 70 px">
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container-fluid">
@@ -20,14 +20,14 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand">Yuno Education</a>
-      <ul class="nav navbar-nav">
-        <li class="<%= is_active?('/pages/') %>"><%= link_to('Home', {:action => 'index'}) %></li>
+    </div>
+      <div class="collapse navbar-collapse" id="topFixedNavbar1">
+      <ul class="nav navbar-nav navlist">
+        <li class="<%= is_active?('/') %>"><%= link_to('Home', {:action => 'index'}) %></li>
         <li class="<%= is_active?('/pages/about') %>"><%= link_to("About", {:action => 'about'}) %></li>
         <li class="<%= is_active?('/pages/interests') %>"><%= link_to("Interests", {:action => 'interests'}) %></li>
+        <li class="<%= is_active?('/pages/learn') %>"><%= link_to("Learn", {:action => 'learn'}) %></li>
       </ul>
-
-    </div>
-    <div class="collapse navbar-collapse">
 
     </div>
   </div>

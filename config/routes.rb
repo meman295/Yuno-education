@@ -7,7 +7,7 @@ get 'pages/index'
 get 'pages/home'
 get 'pages/about'
 get 'pages/interests'
-
+get 'pages/learn'
 
 #get ':controller(/:action(/:id))'
 #get '/pages' => 'pages#index'
