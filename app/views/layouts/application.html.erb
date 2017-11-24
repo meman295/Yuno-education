@@ -10,7 +10,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body style="padding-top: 70 px">
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topFixedNavbar1" aria-expanded="false">
@@ -22,7 +22,7 @@
       <a class="navbar-brand">Yuno Education</a>
     </div>
       <div class="collapse navbar-collapse" id="topFixedNavbar1">
-      <ul class="nav navbar-nav navlist">
+      <ul class="nav navbar-nav navlist nav-pills">
         <li class="<%= is_active?('/') %>"><%= link_to('Home', {:action => 'index'}) %></li>
         <li class="<%= is_active?('/pages/about') %>"><%= link_to("About", {:action => 'about'}) %></li>
         <li class="<%= is_active?('/pages/interests') %>"><%= link_to("Interests", {:action => 'interests'}) %></li>
@@ -35,7 +35,7 @@
     <div class="container">
       <%= yield %>
     </div>  </body>
-    <footer>
+    <footer> 
   <div class="container fluid">
     <p> Yuno Education <%= Time.now.year %></p>
   </div>

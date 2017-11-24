@@ -7,6 +7,15 @@ body {
 	height: 100%;
 	margin: 0;
 }
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 footer {
   font-size: medium;
   text-align: center;
@@ -16,20 +25,37 @@ footer {
   bottom: 15px;
   height: 80px;
   width: 100%;
-  background-color: #FFF;
   padding-top: 58px;
 }
 
+#tableone {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: left;
+}
+
 .classLeft {
-	width: 28%;
+	width: 60%;
+  height: 100px;
 	float: left;
-	margin-right: 1%;
+	margin-right: 500px;
 	margin-left: 5%;
 	margin-top: 30px;
+  background: linear-gradient(#a8abaf, #d3f6ea);
+  border: 3px solid #73AD21;
+  border-radius: 25px;
+  padding:10px 5px 15px 20px;
+  clear: both;
+}
+
+.absoluteClass {
+  position: absolute;
+  top: 80px;
+  left: 0px;
 }
 
 .classRight {
-	width: 55%;
+	width: 40%;
 	float: right;
 	margin-right: 5%;
 	margin-top: 30px;
@@ -43,6 +69,11 @@ footer {
 	margin-bottom: 100px;
   background: red;
   background: linear-gradient(#a8abaf, #e3e6ea);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
 
@@ -67,14 +98,14 @@ body {
 	background-image: url();
 	background-size: cover;
 	background-attachment: fixed;
-	font-family: actor;
+	font-family: garamond;
 	font-style: normal;
 	font-weight: 400;
 	height: 100%;
 	margin: 0;
 }
 h1 {
-	font-family: alfa-slab-one;
+	font-family: garamond;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 2em;

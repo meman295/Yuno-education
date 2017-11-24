@@ -1,7 +1,26 @@
-<h2> You've found home </h2>
+<h2 class="classLeft"> You've found home </h2>
 
+<div class="classRight">
 <p><strong> Let's begin </strong></p>
 
 <%= Time.now.year %>
 <br>
 <%= 333 %>
+
+<div id="myCarousel" class="carousel">
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <%= image_tag('microbiologyc.jpg',:width=> "600", :height=>"400", :alt => "microbio") %>
+    <div class="carousel-caption d-none d-md-block">
+      <h3> this is a header </h3>
+      <p> I made it ? </p>
+    </div>
+    <div class ="item">
+      <%= image_tag('microbiologyc.jpg',:width=> "600", :height=>"400", :alt => "microbio") %>
+    </div>
+  </div>
+</div>
+
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&saquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&aquo;</a>
+</div>

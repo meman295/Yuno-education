@@ -10,6 +10,8 @@ class PagesController < ApplicationController
   end
 
   def show
+
+
 #    @page = Page.find(params[:id])
 #    respond_to do |format|
 #      format.html
